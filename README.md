@@ -1,6 +1,4 @@
-Aquí tienes una versión mejorada del README para el proyecto:
 
----
 
 # Proyecto Vue.js Básico
 
