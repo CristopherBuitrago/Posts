@@ -1,27 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <h1>List of posts:</h1>
+    <PostContainer />
+    <CounterOption />
+    <CounterComposition />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+    import PostContainer from './components/post_component/PostContainer.vue';
+    import CounterOption from './components/counter_components/CounterOption.vue';
+    import CounterComposition from './components/counter_components/CounterComposition.vue';
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    body{
+        text-align: center;
+    }
 </style>
